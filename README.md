@@ -45,3 +45,6 @@ README.md    -> this
 - the cat mentioned (Biscuit) is real, she just doesn't have an owner
 
 - might add a proper contact section later, haven't decided yet
+
+
+(i used chad gptt to format ts md)
