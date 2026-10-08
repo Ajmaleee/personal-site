@@ -1,0 +1,249 @@
+### CircuitShelf Hardware
+
+I got tired of buying the same electronics twice because apparently remembering where I kept 200+ modules is an advanced human skill. So I built an ESP32 inventory system that tracks my components, locations, and lending status. Problem solved. Mostly.
+
+Source: https://github.com/Ajmaleee/CircuitShelf-Hardware  
+Website: No separate website.
+
+---
+
+### TechBlog
+
+A tech blog where I document my hardware experiments, projects, failures, and the occasional moment where something actually works on the first try. Basically, it’s where I dump what I learn before my brain decides to delete it.
+
+Source: https://github.com/Ajmaleee/TechBlog  
+Website: https://ajmaleeeblog.pages.dev/blog/
+
+---
+
+### Ajmaleee Portfolio
+
+My personal portfolio, because apparently having a pile of random projects on GitHub isn't enough. It showcases my web development, IoT experiments, electronics builds, dashboards, and other questionable ideas that somehow escaped the “this is probably stupid” phase.
+
+Source: https://github.com/Ajmaleee/ajmaleee  
+Website: No separate website.
+
+---
+
+### Wakeyyy Wakeeyyyy
+
+A BLARE-style alarm clock for people who can sleep through alarms, earthquakes, and possibly the apocalypse. I built this because apparently telling myself “wake up” at 6 AM wasn't an effective technological solution. Revolutionary stuff, honestly.
+
+Source: https://github.com/Ajmaleee/Wakeyyy-wakeeyyyy-  
+Website: No separate website.
+
+---
+
+### Speak-Easy
+
+A communication project built around helping people who have difficulty speaking communicate more easily. It’s basically me trying to make technology do something actually useful for once instead of making another button that changes a website from blue to slightly darker blue.
+
+Source: https://github.com/Ajmaleee/Speak-Easy  
+Website: https://speakeasyv1.pages.dev/
+
+---
+
+### Meditrace
+
+A medication-tracking project designed to keep important health information organized instead of relying on the classic human method of “I definitely remember when I took that.” Clean interface, useful reminders, and hopefully fewer moments of staring at a pill wondering what happened.
+
+Source: https://github.com/Ajmaleee/Meditrace  
+Website: https://meditracev3.pages.dev/
+
+---
+
+### Jot-ToDO
+
+A simple task manager for dumping tasks somewhere before my brain forgets them five seconds later. Jot-ToDO keeps things straightforward: add tasks, organize them, finish them, and pretend the massive list of unfinished work doesn't exist.
+
+Source: https://github.com/Ajmaleee/Jot-ToDO  
+Website: https://jot-todo.pages.dev/
+
+---
+
+### CircuitShelf
+
+CircuitShelf is my attempt at bringing order to the absolute disaster zone that is an electronics collection. It tracks sensors, modules, boards, cables, tools, and components so I can actually find things without excavating half my room first.
+
+Source: https://github.com/Ajmaleee/CircuitShelf  
+Website: https://circuitshelf.pages.dev/
+
+---
+
+### Bench-Stock
+
+Basically a digital inventory for my electronics bench because apparently owning a ridiculous number of modules requires some form of bookkeeping. It helps me keep track of what I have instead of repeatedly buying something and discovering I already owned three.
+
+Source: https://github.com/Ajmaleee/Bench-Stock  
+Website: https://bench-stock.pages.dev/
+
+---
+
+### Luna Cycle
+
+A privacy-focused period tracking app designed to help users understand and keep track of their cycles. I wanted something clean and useful rather than another app screaming notifications at you like it personally owns your calendar.
+
+Source: https://github.com/Ajmaleee/Luna-Cycle  
+Website: https://lunacyclev1.pages.dev/
+
+---
+
+### SignBridge v3
+
+SignBridge v3 is a communication-focused PWA that helps speech-impaired users communicate using sign-based interaction. It’s basically an attempt to make hand gestures understandable to technology instead of having computers continue pretending humans only communicate through keyboards.
+
+Source: https://github.com/Ajmaleee/SignBridgev3  
+Website: https://signbridgev3.pages.dev/
+
+---
+
+### SignBridge
+
+The original SignBridge experiment. It converts hand signs into speech to make communication easier for people who can't rely on spoken language. This was one of those projects where the idea sounded simple until I actually had to make the computer understand what a hand was doing.
+
+Source: https://github.com/Ajmaleee/SignBridge  
+Website: https://signbridgev2.pages.dev/
+
+---
+
+### Gym Photo Tracker
+
+A visual gym progress tracker built because staring at a mirror every day is probably the least scientific way imaginable to judge progress. This lets you actually document changes over time instead of trusting your brain's extremely unreliable “yeah bro, definitely bigger” algorithm.
+
+Source: https://github.com/Ajmaleee/gym-photo-tracker  
+Website: No separate website.
+
+---
+
+### Py
+
+Py is an AI-assisted Python learning project for people who are tired of opening twelve browser tabs just to figure out why a tiny piece of Python decided to commit crimes. It brings learning resources and an assistant together in one place.
+
+Source: https://github.com/Ajmaleee/Py  
+Website: No separate website.
+
+---
+
+### PsuedoForge
+
+Learning Python logic can be painful, so PsuedoForge tries to make the process less painful by focusing on pseudocode and reasoning before throwing actual syntax at your face. Basically: understand the logic first, then let Python complain about your indentation.
+
+Source: https://github.com/Ajmaleee/PsuedoForge  
+Website: https://psuedoforge.pages.dev/
+
+---
+
+### Telegraph Transmitter
+
+Ever wanted to use Morse code but looked at the price of actual telegraph equipment and immediately gave up? Same. So I built my own version using accessible electronics. Old-school communication, modern DIY approach, and significantly less financial suffering.
+
+Source: https://github.com/Ajmaleee/telegraph_transmitter  
+Website: No separate website.
+
+---
+
+### MeowOS
+
+My first attempt at making a browser-based operating system. It isn't going to replace Windows anytime soon, but hey, everybody starts somewhere. It basically turns a browser into a tiny desktop environment and lets me pretend I built an OS.
+
+Source: https://github.com/Ajmaleee/MeowOS  
+Website: https://ajmaleee.github.io/MeowOS/
+
+---
+
+### Personal Site
+
+A personal website for showing off my projects because apparently “just send them my GitHub” wasn't considered professional enough. It collects my builds, experiments, and other digital nonsense into one place so people can see what I've actually been making.
+
+Source: https://github.com/Ajmaleee/personal-site  
+Website: https://cardboardpersonalsite.pages.dev/
+
+---
+
+### Landslide Detection System v2
+
+The web dashboard for my Terra Sentinel landslide-monitoring project. It takes the data coming from the hardware and turns it into something humans can actually look at instead of staring at serial-monitor numbers and pretending that 73.4 means something.
+
+Source: https://github.com/Ajmaleee/Landslide-Detection-System---v2  
+Website: No separate website.
+
+---
+
+### Terra-Sential
+
+A hardware project built to monitor landslide risk using sensors and an ESP32. The idea is pretty simple: collect environmental data, watch for dangerous changes, and hopefully notice something is wrong before the mountain decides to rearrange the geography.
+
+Source: https://github.com/Ajmaleee/Terra-Sential  
+Website: No separate website.
+
+---
+
+### Mallu Dhaba
+
+A restaurant website concept for Mallu Dhaba, featuring scroll-triggered animations and enough visual flair to make you hungry before you've even seen the menu. Basically, I made a website for food because apparently websites themselves weren't delicious enough.
+
+Source: https://github.com/Ajmaleee/mallu-dhaba-  
+Website: https://mallu-dhaba.vercel.app/
+
+---
+
+### FLOWFI-32
+
+An ESP32-powered digital contact card that creates its own Wi-Fi hotspot and serves a mobile-friendly profile page. Basically NFC's slightly more chaotic cousin. Connect to the ESP32, open the page, and boom—contact details without handing someone a sad little paper card.
+
+Source: https://github.com/Ajmaleee/FLOWFI-32  
+Website: No separate website.
+
+---
+
+### MeowOS v2
+
+MeowOS v2 takes my first browser-based OS experiment and gives it an actual glow-up. It has desktop-style interactions, apps, animations, and an unnecessarily adorable cat theme. Because apparently operating systems need cats now. I'm not arguing with that.
+
+Source: https://github.com/Ajmaleee/MeowOS-v2  
+Website: https://ajmaleee.github.io/MeowOS-v2/
+
+---
+
+### OhmLab
+
+OhmLab is basically a toolbox for electronics calculations. Resistors, circuits, and other things that normally make you reach for a calculator are handled through quick interactive tools. Built for students and makers who would rather calculate things than suffer through them manually.
+
+Source: https://github.com/Ajmaleee/OhmLab  
+Website: https://ohmlab.pages.dev/
+
+---
+
+### Landslide Detection System — Device Source
+
+The actual embedded code behind the Landslide Detection System. This is where the ESP32 stops being an expensive blinking LED and starts reading sensors, processing environmental data, and doing the important hardware-side work behind Terra Sentinel.
+
+Source: https://github.com/Ajmaleee/Landslide-Detection-System---device-source-code  
+Website: No separate website.
+
+---
+
+### Orbit New Tab
+
+Orbit replaces the boring browser new-tab screen with NASA's Astronomy Picture of the Day. Because apparently staring at a random galaxy for ten minutes after opening a tab counts as productivity. Technically it's astronomy. Technically I'm still procrastinating.
+
+Source: https://github.com/Ajmaleee/Orbit-New-Tab  
+Website: https://ajmaleee.github.io/Orbit-New-Tab/
+
+---
+
+### Flames Reveal
+
+A small private experimental website with a hidden-access concept. It's intentionally mysterious, because sometimes a project doesn't need a twelve-page explanation. Sometimes you just lock the door, hide the key, and refuse to elaborate.
+
+Source: https://github.com/Ajmaleee/Flames-reveal  
+Website: https://ajmaleee.github.io/Flames-reveal/
+
+---
+
+### Phishing Detector
+
+A simple phishing-detection experiment designed to help identify suspicious links before someone clicks something they absolutely shouldn't. It's basically a tiny digital bouncer standing between you and a sketchy URL saying, “Yeah… maybe don't go in there.”
+
+Source: https://github.com/Ajmaleee/Phishing-detector  
+Website: No separate website.

@@ -102,7 +102,7 @@ body {
 }
 
 .note-about { transform: rotate(-0.6deg); }
-.note-food  { transform: rotate(0.8deg); }
+.note-arduino { transform: rotate(0.8deg); }
 .note-cats  { transform: rotate(-0.4deg); }
 
 .note h2 {

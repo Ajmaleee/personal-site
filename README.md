@@ -8,9 +8,9 @@ i wanted it to feel like a corkboard instead of just another plain portfolio sit
 
 ## what's on it
 
-- a bit about me (i'm 17, i like trying new food and i'm basically the unofficial cat feeder of my street)
+- a bit about me (i'm 17, i build arduino/esp32 projects and i'm basically the unofficial cat feeder of my street)
 
-- some notes about food and cats specifically cause those come up a lot
+- notes about arduino/esp32 stuff and cats specifically cause those come up a lot
 
 - a grid of projects i've made, each one links out to the actual site
 
