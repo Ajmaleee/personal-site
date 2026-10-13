@@ -6,7 +6,8 @@
   --cork: #cba36a;
   --cork-dark: #b58a53;
   --paper: #fdf6e6;
-  --paper-shadow: #e6d8b8;
+  --paper-blue: #e8f0f8;
+  --paper-yellow: #fef3c7;
   --ink: #3a2b1c;
   --ink-soft: #5a4632;
   --pin-red: #c1443b;
@@ -36,7 +37,7 @@ body {
 
 /* ---------- corkboard frame ---------- */
 .board {
-  max-width: 780px;
+  max-width: 860px;
   margin: 0 auto;
   background-color: var(--cork);
   background-image:
@@ -53,11 +54,11 @@ body {
   padding: 30px 26px 20px;
 }
 
-/* ---------- banner / name tag ---------- */
+/* ---------- banner ---------- */
 .banner {
   position: relative;
   text-align: center;
-  margin-bottom: 26px;
+  margin-bottom: 28px;
 }
 
 .banner h1 {
@@ -69,10 +70,17 @@ body {
   padding: 10px 34px;
   margin: 0;
   transform: rotate(-1.5deg);
-  box-shadow:
-    0 6px 10px rgba(0,0,0,0.35),
-    inset 0 0 0 1px rgba(0,0,0,0.05);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.35);
   border-radius: 2px;
+}
+
+.subtitle {
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+  color: #fff8e6;
+  text-shadow: 0 2px 3px rgba(0,0,0,0.5);
+  margin: 10px 0 0;
+  transform: rotate(-1deg);
 }
 
 .tape {
@@ -84,44 +92,73 @@ body {
   border: 1px solid rgba(255,255,255,0.3);
   box-shadow: 0 2px 4px rgba(0,0,0,0.25);
 }
-
 .tape-left { left: 42%; transform: rotate(-8deg); }
 .tape-right { right: 42%; transform: rotate(8deg); }
+
+/* ---------- layout rows ---------- */
+.scrap-row {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 24px;
+  align-items: start;
+  max-width: 720px;
+  margin: 0 auto 30px;
+}
+.photos-row { grid-template-columns: 1fr 1fr; }
 
 /* ---------- paper notes ---------- */
 .note {
   position: relative;
   background: var(--paper);
+  background-image: repeating-linear-gradient(transparent 0 26px, rgba(0,0,0,0.035) 26px 27px);
   border-radius: 3px;
-  padding: 22px 24px 20px;
-  margin: 0 auto 34px;
-  max-width: 620px;
-  box-shadow:
-    0 10px 18px rgba(0,0,0,0.3),
-    inset 0 0 0 1px rgba(0,0,0,0.04);
+  padding: 24px 24px 20px;
+  box-shadow: 0 10px 18px rgba(0,0,0,0.3);
 }
-
+.paper-blue { background-color: var(--paper-blue); transform: rotate(0.8deg); }
+.paper-yellow { background-color: var(--paper-yellow); transform: rotate(-0.4deg); max-width: 720px; margin: 0 auto 30px; }
 .note-about { transform: rotate(-0.6deg); }
-.note-arduino { transform: rotate(0.8deg); }
-.note-cats  { transform: rotate(-0.4deg); }
 
 .note h2 {
   font-family: 'Patrick Hand', cursive;
   font-size: 24px;
   margin: 0 0 10px;
-  color: var(--ink);
 }
-
 .note p {
-  font-size: 15.5px;
+  font-size: 15px;
   line-height: 1.6;
   margin: 0 0 10px;
   color: var(--ink-soft);
 }
-
 .note p:last-child { margin-bottom: 0; }
 
-/* pushpins */
+.mini-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+.mini-tags span {
+  font-size: 12px;
+  font-weight: 700;
+  background: #3a2b1c;
+  color: #fdf6e6;
+  padding: 3px 10px;
+  border-radius: 20px;
+  transform: rotate(-1deg);
+}
+.mini-tags span:nth-child(2n) { transform: rotate(1.5deg); background: #5f8f6f; }
+
+.stamp {
+  display: inline-block;
+  margin-top: 12px;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #b3402e;
+  border: 2px solid #b3402e;
+  border-radius: 4px;
+  padding: 2px 10px;
+  transform: rotate(-6deg);
+  opacity: 0.85;
+  text-transform: uppercase;
+}
+
 .pin {
   position: absolute;
   top: -12px;
@@ -132,24 +169,127 @@ body {
   border-radius: 50%;
   background: radial-gradient(circle at 35% 30%, #ff8f86, var(--pin-red) 60%, #7a1f19 100%);
   box-shadow: 0 3px 4px rgba(0,0,0,0.45);
+  z-index: 2;
+}
+.pin-orange { background: radial-gradient(circle at 35% 30%, #ffcf8f, var(--pin-orange) 60%, #8a4e0e 100%); }
+.pin-mint { background: radial-gradient(circle at 35% 30%, #b8e0c4, var(--pin-mint) 60%, #2f4f39 100%); }
+
+/* ---------- polaroids (work photos) ---------- */
+.polaroid {
+  margin: 0;
+  background: #fff;
+  padding: 10px 10px 12px;
+  border-radius: 3px;
+  box-shadow: 0 10px 18px rgba(0,0,0,0.35);
+  position: relative;
+}
+.polaroid-1 { transform: rotate(2.5deg); }
+.polaroid-2 { transform: rotate(-2deg); }
+.polaroid-3 { transform: rotate(-1.6deg); }
+.polaroid-4 { transform: rotate(1.8deg); }
+.polaroid:hover { transform: rotate(0deg) scale(1.02); transition: transform .15s ease; }
+
+.photo-img {
+  width: 100%;
+  aspect-ratio: 10 / 7;
+  overflow: hidden;
+  border-radius: 2px;
+  background: #dfe9ef;
+  border: 1px solid rgba(0,0,0,0.12);
+}
+.photo-img svg { display: block; width: 100%; height: 100%; }
+/* when user swaps in real photos: */
+.photo-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.polaroid figcaption {
+  font-family: 'Caveat', cursive;
+  font-size: 18px;
+  line-height: 1.25;
+  padding: 8px 4px 0;
+  color: #333;
+}
+.polaroid figcaption span {
+  display: block;
+  font-family: 'Nunito', sans-serif;
+  font-size: 11px;
+  color: #888;
 }
 
-.pin-orange {
-  background: radial-gradient(circle at 35% 30%, #ffcf8f, var(--pin-orange) 60%, #8a4e0e 100%);
+.washi {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-3deg);
+  width: 90px;
+  height: 24px;
+  background: rgba(232, 185, 62, 0.75);
+  border-left: 2px dashed rgba(255,255,255,0.6);
+  border-right: 2px dashed rgba(255,255,255,0.6);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  z-index: 2;
 }
+.washi-green { background: rgba(95,143,111,0.75); transform: translateX(-50%) rotate(4deg); }
+.washi-pink { background: rgba(214, 120, 140, 0.75); }
+.washi-blue { background: rgba(47,127,209,0.65); transform: translateX(-50%) rotate(-5deg); }
 
-.pin-mint {
-  background: radial-gradient(circle at 35% 30%, #b8e0c4, var(--pin-mint) 60%, #2f4f39 100%);
+.scrap-hint {
+  max-width: 720px;
+  margin: 0 auto 24px;
+  text-align: center;
+  font-size: 12.5px;
+  color: rgba(255,248,230,0.85);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
 }
+.scrap-hint code { background: rgba(0,0,0,0.35); padding: 1px 6px; border-radius: 4px; }
+
+/* ---------- hardware cutout strip ---------- */
+.cutout-strip {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  max-width: 720px;
+  margin: 0 auto 30px;
+}
+.cutout {
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px 10px 6px;
+  width: 104px;
+  text-align: center;
+  box-shadow: 0 8px 14px rgba(0,0,0,0.35);
+  border: 2px dashed rgba(0,0,0,0.15);
+}
+.cutout svg { width: 100%; height: 74px; }
+.cutout span {
+  display: block;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 14px;
+  color: #444;
+  margin-top: 2px;
+}
+.c-esp32 { transform: rotate(-4deg); }
+.c-dht { transform: rotate(3deg); }
+.c-hcsr { transform: rotate(-2deg); width: 124px; }
+.c-oled { transform: rotate(2.5deg); }
+.c-relay { transform: rotate(-3deg); }
+.cutout:hover { transform: rotate(0deg) translateY(-3px); transition: transform .15s ease; }
 
 /* ---------- section title ---------- */
 .section-title {
-  font-family: 'Patrick Hand', cursive;
-  font-size: 28px;
   text-align: center;
-  color: var(--paper);
-  text-shadow: 0 2px 3px rgba(0,0,0,0.4);
   margin: 10px 0 22px;
+}
+.section-title span {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 26px;
+  color: var(--ink);
+  background: var(--paper);
+  padding: 6px 26px;
+  display: inline-block;
+  transform: rotate(1deg);
+  border-radius: 2px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.35);
 }
 
 /* ---------- project cards ---------- */
@@ -157,10 +297,9 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  max-width: 660px;
+  max-width: 700px;
   margin: 0 auto;
 }
-
 .card {
   position: relative;
   display: block;
@@ -169,22 +308,17 @@ body {
   padding: 22px 16px 16px;
   text-decoration: none;
   color: var(--ink);
-  box-shadow:
-    0 8px 14px rgba(0,0,0,0.3),
-    inset 0 0 0 1px rgba(0,0,0,0.04);
+  box-shadow: 0 8px 14px rgba(0,0,0,0.3);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
-
 .card:nth-child(odd)  { transform: rotate(-1deg); }
 .card:nth-child(even) { transform: rotate(1deg); }
-
-.card:hover {
-  transform: translateY(-4px) rotate(0deg);
-  box-shadow:
-    0 14px 20px rgba(0,0,0,0.35),
-    inset 0 0 0 1px rgba(0,0,0,0.05);
+.card:hover { transform: translateY(-4px) rotate(0deg); box-shadow: 0 14px 20px rgba(0,0,0,0.35); }
+.card-feature {
+  background: #fffbe8;
+  outline: 2px dashed #d9822b;
+  outline-offset: -6px;
 }
-
 .card-tab {
   position: absolute;
   top: -10px;
@@ -197,26 +331,11 @@ body {
   border-radius: 3px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
-
-.card h3 {
-  font-family: 'Patrick Hand', cursive;
-  font-size: 19px;
-  margin: 6px 0 8px;
-}
-
-.card p {
-  font-size: 13.5px;
-  line-height: 1.5;
-  color: var(--ink-soft);
-  margin: 0;
-}
+.card h3 { font-family: 'Patrick Hand', cursive; font-size: 19px; margin: 6px 0 8px; }
+.card p { font-size: 13.5px; line-height: 1.5; color: var(--ink-soft); margin: 0; }
 
 /* ---------- footer ---------- */
-.board-footer {
-  text-align: center;
-  margin-top: 8px;
-}
-
+.board-footer { text-align: center; margin-top: 24px; }
 .board-footer p {
   display: inline-block;
   font-family: 'Patrick Hand', cursive;
@@ -230,8 +349,10 @@ body {
 }
 
 /* ---------- responsive ---------- */
-@media (max-width: 560px) {
+@media (max-width: 640px) {
+  .scrap-row, .photos-row { grid-template-columns: 1fr; }
   .cards { grid-template-columns: 1fr; }
   .banner h1 { font-size: 30px; padding: 8px 20px; }
   .board { padding: 22px 16px 16px; border-width: 10px; }
+  .cutout { width: 30%; min-width: 96px; }
 }
