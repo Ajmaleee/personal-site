@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ajmal's corner</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Nunito:wght@400;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,355 +16,245 @@
       <span class="tape tape-left"></span>
       <h1>ajmal's corner</h1>
       <span class="tape tape-right"></span>
-      <p class="subtitle">arduino · esp32 · web builds</p>
     </div>
 
     <main class="board-inner">
 
-      <!-- ABOUT + PHOTO -->
-      <div class="scrap-row">
-        <section class="note note-about">
-          <span class="pin"></span>
-          <h2>about me</h2>
-          <p>I'm Ajmal, 17. I build Arduino and ESP32 projects — sensor nodes, dashboards, inventory tools, and small automation builds.</p>
-          <p>This page collects my work in one place, with links to live sites and source code.</p>
-          <div class="mini-tags">
-            <span>esp32</span><span>arduino</span><span>sensors</span><span>web apps</span>
-          </div>
-        </section>
-
-        <figure class="polaroid polaroid-1">
-          <span class="washi"></span>
-          <div class="photo-img photo-bench" aria-hidden="true">
-            <!-- bench illustration -->
-            <svg viewBox="0 0 200 140" width="100%" height="100%" aria-hidden="true">
-              <rect x="0" y="0" width="200" height="140" fill="#dfe9ef"/>
-              <rect x="0" y="108" width="200" height="32" fill="#9a6b43"/>
-              <rect x="20" y="78" width="90" height="32" rx="3" fill="#f5f5f5" stroke="#999" stroke-width="1.5"/>
-              <g fill="#bbb"><circle cx="30" cy="86" r="1.6"/><circle cx="40" cy="86" r="1.6"/><circle cx="50" cy="86" r="1.6"/><circle cx="60" cy="86" r="1.6"/><circle cx="70" cy="86" r="1.6"/><circle cx="80" cy="86" r="1.6"/><circle cx="90" cy="86" r="1.6"/><circle cx="100" cy="86" r="1.6"/><circle cx="30" cy="96" r="1.6"/><circle cx="40" cy="96" r="1.6"/><circle cx="50" cy="96" r="1.6"/><circle cx="60" cy="96" r="1.6"/><circle cx="70" cy="96" r="1.6"/><circle cx="80" cy="96" r="1.6"/><circle cx="90" cy="96" r="1.6"/><circle cx="100" cy="96" r="1.6"/></g>
-              <rect x="122" y="62" width="52" height="48" rx="4" fill="#1e2a38" stroke="#0e141c" stroke-width="2"/>
-              <rect x="130" y="70" width="36" height="22" rx="2" fill="#7fd4ff"/>
-              <circle cx="134" cy="100" r="3" fill="#ff5a5a"/><circle cx="144" cy="100" r="3" fill="#ffd23f"/>
-              <rect x="30" y="40" width="60" height="8" rx="4" fill="#e4572e"/><rect x="30" y="52" width="44" height="8" rx="4" fill="#2e86e4"/><rect x="30" y="64" width="52" height="8" rx="4" fill="#f6c445"/>
-            </svg>
-          </div>
-          <figcaption>my bench — breadboard + esp32<span>replace with a real photo anytime</span></figcaption>
-        </figure>
-      </div>
-
-      <!-- HARDWARE CUTOUTS STRIP -->
-      <div class="cutout-strip" aria-label="hardware I use">
-        <div class="cutout c-esp32" title="ESP32 dev board">
-          <svg viewBox="0 0 80 110" aria-hidden="true">
-            <rect x="14" y="6" width="52" height="98" rx="6" fill="#1c2733" stroke="#fff" stroke-width="4"/>
-            <rect x="26" y="18" width="28" height="28" rx="2" fill="#3a4d63" stroke="#9fb3c8" stroke-width="1.5"/>
-            <rect x="32" y="54" width="16" height="10" rx="1" fill="#c0cddb"/>
-            <rect x="32" y="68" width="16" height="24" rx="1" fill="none" stroke="#c0cddb" stroke-width="1.2" stroke-dasharray="3 2"/>
-            <g fill="#e8b93e"><rect x="8" y="20" width="8" height="4"/><rect x="8" y="30" width="8" height="4"/><rect x="8" y="40" width="8" height="4"/><rect x="8" y="50" width="8" height="4"/><rect x="8" y="60" width="8" height="4"/><rect x="8" y="70" width="8" height="4"/><rect x="64" y="20" width="8" height="4"/><rect x="64" y="30" width="8" height="4"/><rect x="64" y="40" width="8" height="4"/><rect x="64" y="50" width="8" height="4"/><rect x="64" y="60" width="8" height="4"/><rect x="64" y="70" width="8" height="4"/></g>
-          </svg>
-          <span>esp32</span>
-        </div>
-
-        <div class="cutout c-dht" title="DHT22 sensor">
-          <svg viewBox="0 0 80 80" aria-hidden="true">
-            <rect x="14" y="16" width="52" height="42" rx="6" fill="#f2f2f2" stroke="#fff" stroke-width="4"/>
-            <g fill="#888"><circle cx="26" cy="28" r="1.6"/><circle cx="34" cy="28" r="1.6"/><circle cx="42" cy="28" r="1.6"/><circle cx="50" cy="28" r="1.6"/><circle cx="26" cy="36" r="1.6"/><circle cx="34" cy="36" r="1.6"/><circle cx="42" cy="36" r="1.6"/><circle cx="50" cy="36" r="1.6"/></g>
-            <g stroke="#888" stroke-width="3"><line x1="28" y1="58" x2="28" y2="72"/><line x1="40" y1="58" x2="40" y2="72"/><line x1="52" y1="58" x2="52" y2="72"/></g>
-          </svg>
-          <span>dht22</span>
-        </div>
-
-        <div class="cutout c-hcsr" title="HC-SR04 ultrasonic sensor">
-          <svg viewBox="0 0 100 70" aria-hidden="true">
-            <rect x="8" y="14" width="84" height="36" rx="6" fill="#2f7fd1" stroke="#fff" stroke-width="4"/>
-            <circle cx="30" cy="32" r="12" fill="#c9d6e3" stroke="#1a3a5a" stroke-width="2"/><circle cx="30" cy="32" r="7" fill="none" stroke="#1a3a5a" stroke-width="1.5"/>
-            <circle cx="70" cy="32" r="12" fill="#c9d6e3" stroke="#1a3a5a" stroke-width="2"/><circle cx="70" cy="32" r="7" fill="none" stroke="#1a3a5a" stroke-width="1.5"/>
-            <circle cx="50" cy="32" r="3" fill="#ffde59" stroke="#1a3a5a" stroke-width="1.5"/>
-          </svg>
-          <span>hc-sr04</span>
-        </div>
-
-        <div class="cutout c-oled" title="0.96 OLED display">
-          <svg viewBox="0 0 90 70" aria-hidden="true">
-            <rect x="10" y="12" width="70" height="40" rx="4" fill="#101820" stroke="#fff" stroke-width="4"/>
-            <rect x="18" y="20" width="54" height="24" rx="2" fill="#12343b"/>
-            <text x="24" y="36" font-size="11" fill="#7df9ff" font-family="monospace">23.4°C</text>
-            <g stroke="#c9a227" stroke-width="3"><line x1="26" y1="52" x2="26" y2="62"/><line x1="38" y1="52" x2="38" y2="62"/><line x1="50" y1="52" x2="50" y2="62"/><line x1="62" y1="52" x2="62" y2="62"/></g>
-          </svg>
-          <span>oled</span>
-        </div>
-
-        <div class="cutout c-relay" title="Relay module">
-          <svg viewBox="0 0 80 70" aria-hidden="true">
-            <rect x="10" y="10" width="60" height="44" rx="4" fill="#2b6cb0" stroke="#fff" stroke-width="4"/>
-            <rect x="18" y="18" width="26" height="22" rx="2" fill="#e2e8f0"/>
-            <circle cx="56" cy="26" r="5" fill="#ff5a5a" stroke="#fff" stroke-width="2"/><circle cx="56" cy="40" r="5" fill="#48bb78" stroke="#fff" stroke-width="2"/>
-          </svg>
-          <span>relay</span>
-        </div>
-      </div>
-
-      <div class="scrap-row">
-        <section class="note note-arduino paper-blue">
-          <span class="pin pin-orange"></span>
-          <h2>arduino &amp; esp32</h2>
-          <p>Most builds run on Arduino or ESP32. Recent work: inventory systems, landslide monitoring, digital contact cards, and alarm clocks.</p>
-          <p>Common parts: ESP32 devkit, DHT22, HC-SR04, OLED, relays, breadboards.</p>
-          <span class="stamp">esp32 inside</span>
-        </section>
-
-        <figure class="polaroid polaroid-2">
-          <span class="washi washi-green"></span>
-          <div class="photo-img photo-node" aria-hidden="true">
-            <svg viewBox="0 0 200 140" width="100%" height="100%" aria-hidden="true">
-              <rect x="0" y="0" width="200" height="140" fill="#cfe3d0"/>
-              <rect x="0" y="100" width="200" height="40" fill="#7a9a6d"/>
-              <rect x="55" y="30" width="90" height="70" rx="6" fill="#e8e4d8" stroke="#5a4632" stroke-width="2"/>
-              <rect x="68" y="42" width="34" height="34" rx="3" fill="#1e2a38"/>
-              <rect x="108" y="42" width="24" height="18" rx="2" fill="#2f7fd1"/>
-              <circle cx="120" cy="66" r="6" fill="none" stroke="#333" stroke-width="2"/>
-              <line x1="100" y1="100" x2="100" y2="118" stroke="#333" stroke-width="3"/>
-              <rect x="20" y="20" width="34" height="10" rx="5" fill="#fff" opacity="0.8"/>
-            </svg>
-          </div>
-          <figcaption>terra sentinel — sensor node<span>field unit outdoors</span></figcaption>
-        </figure>
-      </div>
-
-      <section class="note note-cats paper-yellow">
-        <span class="pin pin-mint"></span>
-        <h2>cats</h2>
-        <p>No cat of my own yet. A stray near my gate visits regularly. I call her Biscuit.</p>
+      <section class="note note-about">
+        <span class="pin"></span>
+        <h2>about me</h2>
+        <p>
+          hey, i'm ajmal, 17. this is just my little personal page where i keep
+          links to stuff i've built and random things about me.
+        </p>
+        <p>
+          most of my time goes into arduino and esp32 projects — sensors,
+          dashboards, small automation stuff. and if there's a cat nearby,
+          it's getting my attention whether it wants it or not.
+        </p>
       </section>
 
-      <div class="scrap-row photos-row">
-        <figure class="polaroid polaroid-3">
-          <span class="washi washi-pink"></span>
-          <div class="photo-img photo-shelf" aria-hidden="true">
-            <svg viewBox="0 0 200 140" width="100%" height="100%" aria-hidden="true">
-              <rect x="0" y="0" width="200" height="140" fill="#efe6d5"/>
-              <rect x="16" y="24" width="168" height="10" fill="#8a5a33"/><rect x="16" y="66" width="168" height="10" fill="#8a5a33"/>
-              <g><rect x="26" y="38" width="28" height="28" fill="#d64545"/><rect x="58" y="38" width="28" height="28" fill="#2f7fd1"/><rect x="90" y="38" width="28" height="28" fill="#e8b93e"/><rect x="122" y="38" width="28" height="28" fill="#48bb78"/><rect x="26" y="80" width="36" height="30" fill="#cbd5e0"/><rect x="68" y="80" width="36" height="30" fill="#a0aec0"/><rect x="110" y="80" width="36" height="30" fill="#718096"/></g>
-            </svg>
-          </div>
-          <figcaption>circuitshelf — parts bins<span>200+ components tracked</span></figcaption>
-        </figure>
-        <figure class="polaroid polaroid-4">
-          <span class="washi washi-blue"></span>
-          <div class="photo-img photo-flowfi" aria-hidden="true">
-            <svg viewBox="0 0 200 140" width="100%" height="100%" aria-hidden="true">
-              <rect x="0" y="0" width="200" height="140" fill="#1a202c"/>
-              <rect x="60" y="16" width="80" height="108" rx="10" fill="#fff"/>
-              <circle cx="100" cy="44" r="14" fill="#cbd5e0"/><rect x="76" y="66" width="48" height="6" rx="3" fill="#333"/><rect x="84" y="76" width="32" height="5" rx="2.5" fill="#888"/><rect x="72" y="90" width="56" height="18" rx="4" fill="#2f7fd1"/>
-              <path d="M40 60 Q30 90 55 110 M160 60 Q170 90 145 110" stroke="#7fd4ff" stroke-width="2" fill="none" stroke-dasharray="4 4"/>
-            </svg>
-          </div>
-          <figcaption>flowfi-32 — wifi card<span>served from esp32 hotspot</span></figcaption>
-        </figure>
-      </div>
+      <section class="note note-arduino">
+        <span class="pin pin-orange"></span>
+        <h2>arduino & esp32</h2>
+        <p>
+          pretty much everything i build ends up on an arduino or an esp32.
+          inventory shelves, landslide sensors, digital contact cards, alarm
+          clocks. if it can read a sensor or serve a page from a microcontroller,
+          i've probably tried it.
+        </p>
+      </section>
 
-      <p class="scrap-hint">to use your own photos: replace each <code>.photo-img svg</code> block with an <code>&lt;img&gt;</code> — sizing already fits.</p>
+      <section class="note note-cats">
+        <span class="pin pin-mint"></span>
+        <h2>cats 🐾</h2>
+        <p>
+          don't have one of my own yet but every stray cat in my neighborhood
+          knows my face at this point. one of them basically waits for me near
+          my gate. no name for her officially but i call her Biscuit.
+        </p>
+      </section>
 
-      <h2 class="section-title"><span>stuff i've built</span></h2>
+      <h2 class="section-title">stuff i've built</h2>
 
       <div class="cards">
 
         <a class="card" href="https://ajmaleee.github.io/MeowOS-v2/" target="_blank">
           <span class="card-tab">01</span>
           <h3>MeowOS v2</h3>
-          <p>Browser-based desktop environment with apps and window management.</p>
+          <p>a fake operating system that runs in your browser. no real reason i made this, just wanted to see if i could.</p>
         </a>
 
         <a class="card" href="https://doesyourcrushlikeyou.pages.dev/" target="_blank">
           <span class="card-tab">02</span>
-          <h3>Does Your Crush Like You</h3>
-          <p>Quiz site that gives a result based on answers.</p>
+          <h3>does your crush like you</h3>
+          <p>a silly little quiz site. don't take the results too seriously, it's just for fun.</p>
         </a>
 
         <a class="card" href="https://ajmaleeev2.pages.dev/" target="_blank">
           <span class="card-tab">03</span>
-          <h3>Ajmalee v2</h3>
-          <p>Previous version of my portfolio.</p>
+          <h3>ajmalee v2</h3>
+          <p>an older version of my portfolio. kept it online cause i didn't feel like deleting it.</p>
         </a>
 
         <a class="card" href="https://ohmlab.pages.dev/" target="_blank">
           <span class="card-tab">04</span>
-          <h3>OhmLab</h3>
-          <p>Electronics calculator for resistors and basic circuits.</p>
+          <h3>ohmlab</h3>
+          <p>a small electronics calculator, resistors and basic circuit stuff. made it while studying for something.</p>
         </a>
 
         <a class="card" href="https://ajmaleee.github.io/Orbit-New-Tab/" target="_blank">
           <span class="card-tab">05</span>
           <h3>Orbit New Tab</h3>
-          <p>Custom new-tab page showing NASA's Astronomy Picture of the Day.</p>
+          <p>a custom new tab page for chrome. the default one was boring so i made my own.</p>
         </a>
 
         <a class="card" href="https://rbotelectronics.pages.dev/" target="_blank">
           <span class="card-tab">06</span>
           <h3>RBOT Electronics</h3>
-          <p>Site built for an electronics project.</p>
+          <p>a site i built for an electronics project. simple, does what it needs to.</p>
         </a>
 
         <a class="card" href="https://ajmaleee.github.io/hacker-login-ui/" target="_blank">
           <span class="card-tab">07</span>
-          <h3>Hacker Login UI</h3>
-          <p>Terminal-style login screen concept. Front-end only.</p>
+          <h3>hacker login ui</h3>
+          <p>a fake terminal-style login screen, purely for looks. doesn't actually log you into anything.</p>
         </a>
 
         <a class="card" href="https://ajmaleee.github.io/MILO-Ai-base-chatbot/" target="_blank">
           <span class="card-tab">08</span>
           <h3>MILO</h3>
-          <p>Rule-based chatbot built from scratch in JavaScript.</p>
+          <p>a basic ai chatbot i built from scratch. still a bit buggy but it mostly works.</p>
         </a>
 
-        <a class="card card-feature" href="https://github.com/Ajmaleee/CircuitShelf-Hardware" target="_blank">
+        <a class="card" href="https://github.com/Ajmaleee/CircuitShelf-Hardware" target="_blank">
           <span class="card-tab">09</span>
           <h3>CircuitShelf Hardware</h3>
-          <p>ESP32 inventory system tracking components, locations, and lending.</p>
+          <p>an esp32 inventory system that tracks 200+ components, locations and lending status.</p>
         </a>
 
         <a class="card" href="https://ajmaleeeblog.pages.dev/blog/" target="_blank">
           <span class="card-tab">10</span>
           <h3>TechBlog</h3>
-          <p>Blog documenting hardware experiments and project notes.</p>
+          <p>a tech blog documenting my hardware experiments, projects and failures.</p>
         </a>
 
         <a class="card" href="https://github.com/Ajmaleee/ajmaleee" target="_blank">
           <span class="card-tab">11</span>
           <h3>Ajmaleee Portfolio</h3>
-          <p>Portfolio covering web, IoT, and electronics work.</p>
+          <p>my portfolio of web dev, iot experiments, electronics builds and dashboards.</p>
         </a>
 
         <a class="card" href="https://github.com/Ajmaleee/Wakeyyy-wakeeyyyy-" target="_blank">
           <span class="card-tab">12</span>
           <h3>Wakeyyy Wakeeyyyy</h3>
-          <p>Loud alarm clock build for heavy sleepers.</p>
+          <p>a blare-style alarm clock for people who can sleep through anything.</p>
         </a>
 
         <a class="card" href="https://speakeasyv1.pages.dev/" target="_blank">
           <span class="card-tab">13</span>
           <h3>Speak-Easy</h3>
-          <p>Communication aid for people with speech difficulty.</p>
+          <p>helps people who have difficulty speaking communicate more easily.</p>
         </a>
 
         <a class="card" href="https://meditracev3.pages.dev/" target="_blank">
           <span class="card-tab">14</span>
           <h3>Meditrace</h3>
-          <p>Medication tracker with reminders.</p>
+          <p>medication tracking with clean reminders, instead of relying on memory.</p>
         </a>
 
         <a class="card" href="https://jot-todo.pages.dev/" target="_blank">
           <span class="card-tab">15</span>
-          <h3>Jot-ToDo</h3>
-          <p>Simple task manager with add, organize, and complete.</p>
+          <h3>Jot-ToDO</h3>
+          <p>a straightforward task manager for dumping tasks before my brain forgets them.</p>
         </a>
 
         <a class="card" href="https://circuitshelf.pages.dev/" target="_blank">
           <span class="card-tab">16</span>
           <h3>CircuitShelf</h3>
-          <p>Inventory app for sensors, modules, boards, and tools.</p>
+          <p>tracks sensors, modules, boards and tools so i can find things without digging.</p>
         </a>
 
         <a class="card" href="https://bench-stock.pages.dev/" target="_blank">
           <span class="card-tab">17</span>
           <h3>Bench-Stock</h3>
-          <p>Stock tracker for an electronics workbench.</p>
+          <p>a digital inventory for my electronics bench so i stop rebuying parts i own.</p>
         </a>
 
         <a class="card" href="https://lunacyclev1.pages.dev/" target="_blank">
           <span class="card-tab">18</span>
           <h3>Luna Cycle</h3>
-          <p>Privacy-focused period tracking app.</p>
+          <p>a clean, privacy-focused period tracking app.</p>
         </a>
 
         <a class="card" href="https://signbridgev3.pages.dev/" target="_blank">
           <span class="card-tab">19</span>
           <h3>SignBridge v3</h3>
-          <p>PWA for sign-based communication support.</p>
+          <p>a pwa that helps speech-impaired users communicate through sign-based interaction.</p>
         </a>
 
         <a class="card" href="https://signbridgev2.pages.dev/" target="_blank">
           <span class="card-tab">20</span>
           <h3>SignBridge</h3>
-          <p>Earlier version converting hand signs to speech output.</p>
+          <p>the original experiment — converts hand signs into speech.</p>
         </a>
 
         <a class="card" href="https://github.com/Ajmaleee/gym-photo-tracker" target="_blank">
           <span class="card-tab">21</span>
           <h3>Gym Photo Tracker</h3>
-          <p>Photo-based gym progress log.</p>
+          <p>visual gym progress tracking, so mirror guessing doesn't count as data.</p>
         </a>
 
         <a class="card" href="https://github.com/Ajmaleee/Py" target="_blank">
           <span class="card-tab">22</span>
           <h3>Py</h3>
-          <p>Python learning hub with resources and assistant.</p>
+          <p>ai-assisted python learning with resources and an assistant in one place.</p>
         </a>
 
         <a class="card" href="https://psuedoforge.pages.dev/" target="_blank">
           <span class="card-tab">23</span>
           <h3>PsuedoForge</h3>
-          <p>Pseudocode-first Python logic practice.</p>
+          <p>learn python logic through pseudocode before touching real syntax.</p>
         </a>
 
         <a class="card" href="https://github.com/Ajmaleee/telegraph_transmitter" target="_blank">
           <span class="card-tab">24</span>
           <h3>Telegraph Transmitter</h3>
-          <p>DIY Morse code transmitter with basic electronics.</p>
+          <p>a diy morse code telegraph built with accessible electronics.</p>
         </a>
 
         <a class="card" href="https://ajmaleee.github.io/MeowOS/" target="_blank">
           <span class="card-tab">25</span>
           <h3>MeowOS</h3>
-          <p>First version of the browser desktop experiment.</p>
+          <p>my first attempt at a browser-based desktop environment.</p>
         </a>
 
         <a class="card" href="https://cardboardpersonalsite.pages.dev/" target="_blank">
           <span class="card-tab">26</span>
           <h3>Personal Site</h3>
-          <p>This site. Index of builds and experiments.</p>
+          <p>this site — my builds and experiments collected in one place.</p>
         </a>
 
-        <a class="card card-feature" href="https://github.com/Ajmaleee/Landslide-Detection-System---v2" target="_blank">
+        <a class="card" href="https://github.com/Ajmaleee/Landslide-Detection-System---v2" target="_blank">
           <span class="card-tab">27</span>
-          <h3>Landslide Detection v2</h3>
-          <p>Dashboard for the Terra Sentinel monitoring project.</p>
+          <h3>Landslide Detection System v2</h3>
+          <p>the web dashboard for my terra sentinel landslide-monitoring project.</p>
         </a>
 
-        <a class="card card-feature" href="https://github.com/Ajmaleee/Terra-Sential" target="_blank">
+        <a class="card" href="https://github.com/Ajmaleee/Terra-Sential" target="_blank">
           <span class="card-tab">28</span>
           <h3>Terra-Sential</h3>
-          <p>ESP32 sensor rig for landslide-risk monitoring.</p>
+          <p>an esp32 + sensor rig that watches for landslide risk.</p>
         </a>
 
         <a class="card" href="https://mallu-dhaba.vercel.app/" target="_blank">
           <span class="card-tab">29</span>
           <h3>Mallu Dhaba</h3>
-          <p>Restaurant site concept with scroll animations.</p>
+          <p>a restaurant website concept with scroll-triggered animations.</p>
         </a>
 
-        <a class="card card-feature" href="https://github.com/Ajmaleee/FLOWFI-32" target="_blank">
+        <a class="card" href="https://github.com/Ajmaleee/FLOWFI-32" target="_blank">
           <span class="card-tab">30</span>
           <h3>FLOWFI-32</h3>
-          <p>ESP32 contact card served over its own Wi-Fi hotspot.</p>
+          <p>an esp32 contact card that serves your profile over its own wifi hotspot.</p>
         </a>
 
         <a class="card" href="https://github.com/Ajmaleee/Landslide-Detection-System---device-source-code" target="_blank">
           <span class="card-tab">31</span>
-          <h3>Landslide — Device Source</h3>
-          <p>Embedded ESP32 firmware for the detection system.</p>
+          <h3>Landslide Detection — Device Source</h3>
+          <p>the embedded esp32 code behind the landslide detection system.</p>
         </a>
 
         <a class="card" href="https://ajmaleee.github.io/Flames-reveal/" target="_blank">
           <span class="card-tab">32</span>
           <h3>Flames Reveal</h3>
-          <p>Small experimental site with gated access.</p>
+          <p>a small private experimental site with a hidden-access concept.</p>
         </a>
 
         <a class="card" href="https://github.com/Ajmaleee/Phishing-detector" target="_blank">
           <span class="card-tab">33</span>
           <h3>Phishing Detector</h3>
-          <p>Tool for checking suspicious links.</p>
+          <p>a small experiment for spotting suspicious links before you click them.</p>
         </a>
 
       </div>
